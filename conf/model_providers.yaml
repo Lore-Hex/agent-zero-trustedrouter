@@ -1,0 +1,24 @@
+# TrustedRouter provider for Agent Zero.
+# Provider ID 'trustedrouter' maps to TRUSTEDROUTER_API_KEY.
+#
+# litellm_provider is 'openai' rather than litellm's own 'trustedrouter'
+# provider on purpose: that provider strips the first path segment as the
+# provider prefix, so "trustedrouter/auto" reaches the API as bare "auto",
+# which TrustedRouter rejects. Routing through the OpenAI-compatible provider
+# with an explicit api_base forwards the full model id unchanged.
+chat:
+  trustedrouter:
+    name: TrustedRouter
+    litellm_provider: openai
+    models_list:
+      endpoint_url: "https://api.trustedrouter.com/v1/models"
+    kwargs:
+      a0_api_mode: chat
+      api_base: https://api.trustedrouter.com/v1
+
+embedding:
+  trustedrouter:
+    name: TrustedRouter
+    litellm_provider: openai
+    kwargs:
+      api_base: https://api.trustedrouter.com/v1

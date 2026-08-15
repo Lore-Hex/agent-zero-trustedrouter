@@ -1,0 +1,5 @@
+name: trustedrouter_provider
+title: TrustedRouter Provider
+description: Adds TrustedRouter as an OpenAI-compatible chat and embedding provider in Agent Zero.
+version: 1.0.0
+always_enabled: true
