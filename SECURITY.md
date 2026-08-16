@@ -11,8 +11,8 @@ complete one sent late.
 
 ## What to expect
 
-- **Acknowledgement within one business day.**
-- An assessment of severity and affected components, shared with you.
+- **Acknowledgement within 72 hours.**
+- An assessment of severity and affected components within 5 business days.
 - Notification when a fix ships, and credit if you would like it.
 
 We treat any suspected exposure of customer content as the highest severity by
